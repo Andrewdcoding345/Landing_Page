@@ -1,4 +1,8 @@
 .header {
     font: 24px;
-    color: #f9faf8
-}
+    color: #f9faf8;
+    background-color: #1f2937;
+    display: flexbox;
+  }
+  
+
