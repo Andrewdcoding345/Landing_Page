@@ -285,19 +285,23 @@ footer {
     align-items: flex-start;
 }
 
-
+/* Styling for footer */
 .footer {
-    background-color: #1f2937; /* Dark background color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    padding: 20px 0; /* Padding above and below the text */
-    position: absolute; /* Position it at the bottom */
-    bottom: 0;
-    width: 100%; /* Full width */
-    left: 0; /* Align to the left */
+    background-color: #1f2937; 
+    /* Dark background color */
+    color: white; 
+    /* Text color */
+    text-align: center; 
+    /* Center the text */
+    padding: 20px 0; 
+    /* Padding above and below the text */
+    width: 100%;
+     /* Full width */
 }
 
 .footer p {
-    margin: 0; /* Remove default margins */
-    font-size: 0.9em; /* Small font size for footer text */
+    margin: 0; 
+    /* Remove default margins */
+    font-size: 0.9em; 
+    /* Small font size for footer text */
 }
