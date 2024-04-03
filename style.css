@@ -235,7 +235,7 @@ footer {
     /* Stack elements vertically */
     align-items: center; 
     /* Center-align the flex items */
-    max-width: 600px;
+    max-width: 800px;
      /* Maximum width of the cta box */
 }
 
@@ -285,3 +285,19 @@ footer {
     align-items: flex-start;
 }
 
+
+.footer {
+    background-color: #1f2937; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding above and below the text */
+    position: absolute; /* Position it at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    left: 0; /* Align to the left */
+}
+
+.footer p {
+    margin: 0; /* Remove default margins */
+    font-size: 0.9em; /* Small font size for footer text */
+}
