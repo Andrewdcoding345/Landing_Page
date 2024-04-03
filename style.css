@@ -1,8 +1,97 @@
 .header {
-    font: 24px;
-    color: #f9faf8;
+    padding: 20px;
+     /* Spacing around the header  */
+    color: white;
     background-color: #1f2937;
-    display: flexbox;
-  }
-  
+     /* Dark Background */
+     }
 
+.header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+     }
+
+  .header-logo {
+    font-size: 24px;
+    /* Larger text for logo */
+    flex: 1;
+    /* For growth */
+    }
+
+
+.header-links {
+        display: flex;
+        flex: 2;
+        /* Allows links container to take up more space if needed */
+        justify-content: flex-end;
+        /* Aligns links to the right */
+    }
+
+
+.header-link {
+    font-size: 16px;
+    color: #f9faf8;
+    text-decoration: none;
+     /* Removes underline from links */
+   margin-left: 10px;
+   /* Adjust spacing between links */
+}
+
+
+.header-link:hover {
+    text-decoration: underline;
+     /* Optional: underline on hover */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+     /* Space between text-container and image */
+    align-items: center; 
+    /* Center items vertically */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; 
+    /* Stack title-container and button vertically */
+    align-items: flex-start; 
+    /* Align to the start of text-container */
+}
+
+.title-container h1,
+.title-container h2 {
+    margin: 0; 
+    /* Removes default margins */
+}
+
+.header-button {
+    /* Style the button as needed, ensure it's a block-level element */
+    background-color: lightblue; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    /* Padding inside the button */
+    border-radius: 5px; 
+    /* Rounded corners for the button */
+    margin-right: 20px; 
+    /* Spacing between button and image placeholder */
+    margin-top: 20px;
+    display: block; 
+    margin-top: 20px; 
+}
+
+.image-placeholder {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    /* Width of the placeholder */
+    height: 100px; 
+    /* Height of the placeholder */
+  background-color: grey;
+   
+}
