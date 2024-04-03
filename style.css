@@ -95,7 +95,7 @@
   background-color: grey;
    
 }
-
+/* Start of Info styles */
 
 .info {
     text-align: center;
@@ -113,18 +113,20 @@
 
 .info-content {
     display: flex;
-    justify-content: space-around; 
-    /* Distribute the space around the info-blocks */
-    align-items: flex-start; 
-    /* Align blocks to the top */
+    justify-content: wrap; 
+  /* allows the item to wrap */
+    justify-content: center;
+  /* Centers the item horizontally */
+    gap: 20px;
+  /* Adds space between the items */
 }
 
+
 .info-block {
-    width: 20%; 
+    width: 200px; 
     /* Assign width to each block*/
     text-align: center; 
     /* Center text within each block */
-   
 }
 
 .info-image {
@@ -134,22 +136,25 @@
     /* Set a fixed height for the image container */
     margin-bottom: 10px; 
     /* Spacing between the image container and the subtext */
- 
-}
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+ }
 
 .info-block p {
-    margin: 0; 
-    /* Remove default paragraph margin */
-    color: #333; 
-    /* Subtext color */
-    font-size: 0.9em; 
-    /* Adjust the font size as needed */
+    display: flex;
+    flex-direction: column;
 }
+
 @media (max-width: 768px) {
     .info-content {
         flex-direction: column; /* Stack the blocks on top of each other on smaller screens */
+        align-items: center;
     }
-
+}
     .info-block {
         width: 100%; 
         /* Full width for small screens */
@@ -157,3 +162,55 @@
         /* Add some space between stacked blocks */
     }
 
+/* Start of quote styles */
+
+.quote {
+    background-color: #f0f0f0; 
+    padding: 40px; 
+    text-align: center; 
+    /* Center the text inside the quote div */
+    font-style: italic; 
+    /* quotes are styled with italic font */
+}
+
+blockquote {
+    quotes: "“" "”" "‘" "’"; /* Using CSS quotes for styling */
+    padding: 20px;
+    position: relative; 
+    font-size: 1.2em;
+    line-height: 1.4; 
+    color: #555; 
+    display: inline-block; /* To center the blockquote */
+    max-width: 80%; 
+    margin: auto; /* Auto margins for centering */
+}
+
+blockquote:before,
+blockquote:after {
+    content: open-quote;
+    font-size: 4em; 
+    line-height: 0.1em; 
+    vertical-align: -0.4em; 
+   
+    color: #ccc; 
+    /* Light color for the quote characters */
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+footer {
+    display: block; 
+    /* Makes the footer behave like a block */
+    text-align: right; 
+    /* Aligns the citation to the right */
+    margin-top: 20px; 
+    /* Space between the quote and the author */
+    font-size: 0.8em; 
+    /* Smaller text for the author */
+    font-style: normal;
+     /* Overrides the italic style if necessary */
+    font-weight: bold; 
+    
+}
