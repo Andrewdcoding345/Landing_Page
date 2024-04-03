@@ -59,6 +59,7 @@
     /* Stack title-container and button vertically */
     align-items: flex-start; 
     /* Align to the start of text-container */
+    margin-right: 40px;
 }
 
 .title-container h1,
@@ -69,7 +70,7 @@
 
 .header-button {
     /* Style the button as needed, ensure it's a block-level element */
-    background-color: lightblue; 
+    background-color: blue; 
     color: white;
     text-decoration: none;
     padding: 10px 15px; 
@@ -213,5 +214,74 @@ footer {
     font-style: normal;
      /* Overrides the italic style if necessary */
     font-weight: bold; 
-    
 }
+
+
+.cta-section {
+    background-color: #f0f0f0; 
+    text-align: center;
+    padding: 20px; 
+}
+
+.cta-content {
+    background-color: #007bff; 
+    color: white;
+    padding: 30px; 
+    border-radius: 10px; 
+    /* Rounded corners */
+    display: inline-flex; 
+    /* To center and allow flex content */
+    flex-direction: column; 
+    /* Stack elements vertically */
+    align-items: center; 
+    /* Center-align the flex items */
+    max-width: 600px;
+     /* Maximum width of the cta box */
+}
+
+.cta-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cta-text-button {
+    display: flex;
+    align-items: center; 
+    /* Align the text and button */
+    justify-content: center; 
+    /* Center the items horizontally */
+}
+
+.cta-text-button p {
+    margin: 0;
+    margin-right: 20px; 
+    /* Added space between the text and the button */
+}
+
+.cta-button {
+    background-color: #007bff; 
+    /* Background color for the button */
+    color: white; 
+    /* Text color for the button */
+    text-decoration: none;
+    padding: 10px 20px; 
+    /* Padding inside the button */
+    border-radius: 5px; 
+    /* Rounded corners for the button */
+    border: 1px solid white; 
+    /* Adjust border as needed */
+    transition: background-color 0.3s; 
+    /* Smooth background transition */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; 
+    /* Darker shade when hovered */
+    color: white;
+}
+
+
+.cta-text-button {
+    align-items: flex-start;
+}
+
