@@ -95,3 +95,65 @@
   background-color: grey;
    
 }
+
+
+.info {
+    text-align: center;
+     /* Center the heading */
+    padding: 20px;
+     /* Add padding for spacing */
+    background-color: #f0f0f0; 
+    /* Change the background color as needed */
+}
+
+.info h2 {
+    margin-bottom: 30px; 
+    /* Spacing between the heading and the content blocks */
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-around; 
+    /* Distribute the space around the info-blocks */
+    align-items: flex-start; 
+    /* Align blocks to the top */
+}
+
+.info-block {
+    width: 20%; 
+    /* Assign width to each block*/
+    text-align: center; 
+    /* Center text within each block */
+   
+}
+
+.info-image {
+    border: 5px solid blue; 
+    /* Add border to image container */
+    height: 150px; 
+    /* Set a fixed height for the image container */
+    margin-bottom: 10px; 
+    /* Spacing between the image container and the subtext */
+ 
+}
+
+.info-block p {
+    margin: 0; 
+    /* Remove default paragraph margin */
+    color: #333; 
+    /* Subtext color */
+    font-size: 0.9em; 
+    /* Adjust the font size as needed */
+}
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column; /* Stack the blocks on top of each other on smaller screens */
+    }
+
+    .info-block {
+        width: 100%; 
+        /* Full width for small screens */
+        margin-bottom: 20px;
+        /* Add some space between stacked blocks */
+    }
+
