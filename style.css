@@ -88,11 +88,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px; 
+    width: 400px; 
     /* Width of the placeholder */
     height: 100px; 
     /* Height of the placeholder */
   background-color: grey;
+  padding: 20px;
    
 }
 /* Start of Info styles */
